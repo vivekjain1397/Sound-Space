@@ -10,10 +10,19 @@ background: url(background.jpg) no-repeat;
 background-size: cover;
 }
 
+.notes {
+	height: 100px;
+	width: 100px;
+
+}
+
+#title{
+	position: absolute;
+	    top: -30px;
+    left: 160px;
+}
 
 img {
-	width: 100px;
-    height: 100px;
     -webkit-animation: myfirst 4s infinite; /* Chrome, Safari, Opera */
 	-webkit-filter: hue-rotate(180deg);
 	
