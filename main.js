@@ -10,21 +10,22 @@ var animate4 ;
 function init(){
    imgObj = document.getElementById('myImage');
    imgObj.style.position= 'relative'; 
+   imgObj.style.top = '70px'; 
    imgObj.style.left = '0px'; 
 
    imgObj2 = document.getElementById('myImage2');
    imgObj2.style.position= 'relative'; 
-   imgObj2.style.top = '150px'; 
+   imgObj2.style.top = '220px'; 
    imgObj2.style.left = '0px'; 
 
    imgObj3 = document.getElementById('myImage3');
    imgObj3.style.position= 'relative'; 
-   imgObj3.style.top = '300px'; 
+   imgObj3.style.top = '370px'; 
    imgObj3.style.left = '0px'; 
 
    imgObj4 = document.getElementById('myImage4');
    imgObj4.style.position= 'relative'; 
-   imgObj4.style.top = '450px'; 
+   imgObj4.style.top = '520px'; 
    imgObj4.style.left = '0px'; 
 }
 function moveRight(){
@@ -42,7 +43,7 @@ function moveRight2(){
 }
 function stop2(){
    clearTimeout(animate2);
-   imgObj2.style.top = '150px'; 
+   imgObj2.style.top = '220px'; 
    imgObj2.style.left = '0px'; 
 }
 function moveRight3(){
@@ -51,7 +52,7 @@ function moveRight3(){
 }
 function stop3(){
    clearTimeout(animate3);
-   imgObj3.style.top = '300px'; 
+   imgObj3.style.top = '370px'; 
    imgObj3.style.left = '0px'; 
 }
 function moveRight4(){
@@ -60,7 +61,7 @@ function moveRight4(){
 }
 function stop4(){
    clearTimeout(animate4);
-   imgObj4.style.top = '450px'; 
+   imgObj4.style.top = '520px'; 
    imgObj4.style.left = '0px'; 
 }
 window.onload =init;
