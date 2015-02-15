@@ -114,7 +114,6 @@ addEventListener("keydown", function(event) {
        showImage2();
        moveRight2();
       setInterval(function () {stop2();}, 1500);
-      
     }
   });
 
@@ -141,6 +140,7 @@ addEventListener("keydown", function(event) {
       setInterval(function () {stop4();}, 1500);
     }
   });
+  
 
   
   
