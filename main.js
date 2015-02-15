@@ -4,6 +4,8 @@ var imgObj2 = null;
 var animate2 ;
 var imgObj3 = null;
 var animate3 ;
+var imgObj4 = null;
+var animate4 ;
 function init(){
    imgObj = document.getElementById('myImage');
    imgObj.style.position= 'relative'; 
@@ -18,6 +20,11 @@ function init(){
    imgObj3.style.position= 'relative'; 
    imgObj3.style.top = '300px'; 
    imgObj3.style.left = '0px'; 
+
+   imgObj4 = document.getElementById('myImage4');
+   imgObj4.style.position= 'relative'; 
+   imgObj4.style.top = '450px'; 
+   imgObj4.style.left = '0px'; 
 }
 function moveRight(){
    imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
@@ -45,6 +52,15 @@ function stop3(){
    clearTimeout(animate3);
    imgObj3.style.top = '300px'; 
    imgObj3.style.left = '0px'; 
+}
+function moveRight4(){
+   imgObj4.style.left = parseInt(imgObj4.style.left) + 10 + 'px';
+   animate4 = setTimeout(moveRight4,20); 
+}
+function stop4(){
+   clearTimeout(animate4);
+   imgObj4.style.top = '450px'; 
+   imgObj4.style.left = '0px'; 
 }
 window.onload =init;
 
@@ -83,7 +99,8 @@ addEventListener("keydown", function(event) {
     if (event.keyCode == 71)
     {
        document.getElementById('g').play() 
-    
+       moveRight4();
+      setInterval(function () {stop4();}, 2000);
     }
   });
 
