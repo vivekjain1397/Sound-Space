@@ -12,6 +12,7 @@ canvas {
     border: 3px #CCC solid;
 }
 </style>
+
 </head>
 
 <body>
@@ -35,6 +36,8 @@ canvas {
 </audio>
 
 <img id="myImage" src="note1.png" />
+
+<img id="myImage2" src="note2.png" />
 
 <script>
 
@@ -70,28 +73,64 @@ function drawCircle() {
 }*/
 
 var imgObj = null;
+var imgObj2 = null;
 var animate ;
+var animate2 ;
+
 function init(){
    imgObj = document.getElementById('myImage');
    imgObj.style.position= 'relative'; 
    imgObj.style.left = '0px'; 
+
+   imgObj2 = document.getElementById('myImage2');
+   imgObj2.style.position= 'relative'; 
+   imgObj2.style.left = '0px'; 
 }
 function moveRight(){
+
    imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
    animate = setTimeout(moveRight,20); 
 }
+function moveRight2(){
+
+   imgObj2.style.left = parseInt(imgObj2.style.left) + 10 + 'px';
+   animate2 = setTimeout(moveRight2,20); 
+}
 function stop(){
    clearTimeout(animate);
-   imgObj.style.left = '0px'; 
+   imgObj.style.left = '0px';
+ 
+}
+function stop2(){
+   clearTimeout(animate2);
+   imgObj2.style.left = '0px';
+ 
 }
 window.onload =init;
+
+/*function init2(){
+   imgObj2 = document.getElementById('myImage2');
+   imgObj2.style.position= 'relative'; 
+   imgObj2.style.left = '0px'; 
+}
+function moveRight2(){
+
+   imgObj2.style.left = parseInt(imgObj2.style.left) + 10 + 'px';
+   animate = setTimeout(moveRight2,20); 
+}
+function stop2(){
+   clearTimeout(animate2);
+   imgObj2.style.left = '0px';
+}
+window.onload =init2;*/
 
 addEventListener("keydown", function(event) {
     if (event.keyCode == 67)
     {
+
       document.getElementById('c').play()  
       moveRight();
-      setInterval(function () {stop();}, 3000);
+      setInterval(function () {stop();}, 1000);
     /*  requestAnimationFrame(drawCircle);
       setInterval(function () {cancelAnimationFrame(cancel)}, 3000);
       setInterval(function () {mainContext.clearRect(0, 0, canvasWidth, canvasHeight)}, 500); */
@@ -101,7 +140,11 @@ addEventListener("keydown", function(event) {
 addEventListener("keydown", function(event) {
     if (event.keyCode == 68)
     {
+      
        document.getElementById('d').play() 
+       moveRight2();
+       setInterval(function () {stop2();}, 1000);
+       
       /* requestAnimationFrame(drawCircle);
       setInterval(function () {cancelAnimationFrame(cancel)}, 3000); */
     }
