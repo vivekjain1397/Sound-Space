@@ -9,7 +9,8 @@ function init(){
 
    imgObj2 = document.getElementById('myImage2');
    imgObj2.style.position= 'relative'; 
-   imgObj2.style.left = '0px'; 
+   imgObj2.style.top = '200px'; 
+   imgObj.style.left = '0px'; 
 }
 function moveRight(){
    imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
@@ -26,6 +27,7 @@ function moveRight2(){
 }
 function stop2(){
    clearTimeout(animate2);
+   imgObj2.style.top = '200px'; 
    imgObj2.style.left = '0px'; 
 }
 window.onload =init;
