@@ -187,7 +187,7 @@ addEventListener("keydown", function(event) {
 		case 69:
 			gammaFunction(eGainNode, init3, showImage3, moveRight3, stop3)
 			break;
-		case 70:
+		case 71:
 			gammaFunction(fGainNode, init4, showImage4, moveRight4, stop4)
 			break;
 		default:
