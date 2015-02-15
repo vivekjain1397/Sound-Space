@@ -9,3 +9,29 @@ width: auto; height: auto; z-index: -100;
 background: url(background.jpg) no-repeat;
 background-size: cover;
 }
+
+
+img {
+	width: 100px;
+    height: 100px;
+    -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
+    animation: myfirst 5s;
+	-webkit-filter: hue-rotate(180deg);
+	
+}
+
+
+
+/*Chrome, Safari, Opera */
+
+@-webkit-keyframes myfirst {
+    from {filter: red;}
+    to {filter: yellow;}
+}
+
+/* Standard syntax */
+
+@keyframes myfirst {
+    from {filter: red;}
+    to {filter: yellow;}
+}
