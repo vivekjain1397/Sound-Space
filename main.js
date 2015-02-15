@@ -152,14 +152,21 @@ setInterval(function() {
 
 
 function gammaFunction(gNode, ini, sho, mv, st) {
-	$('body').append($('<img src="note1.png" class="notes" />'));
+	//$('body').append($('<img src="note1.png" class="notes" />'));
+	createNewImage();
+	
+	var ww = $(window).width();
+    var wh = $(window).height();
+	
+	$(".notes").each(function(i){
+        var posx = Math.round(Math.random() * ww)-20;
+        var posy = Math.round(Math.random() * wh)-20;
+        $(this).css("top", posy + "px").css("left", posx + "px");
+    });
 		
 	$img = $(".notes");
 	wander();
 	
-	setInterval(function() {
-	$('.notes').first().remove();}
-	, 5500);
 
   
 	gNode.gain.value = 1
