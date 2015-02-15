@@ -17,10 +17,12 @@ function createNewImage(){
 	
 		$img = $(".notes");
 }
+
+/*
 setInterval(function(){
 		createNewImage();
 }, 3000)
-
+*/
 var ww = $(window).width();
 var wh = $(window).height();
 	
@@ -37,7 +39,7 @@ setInterval(function(){
 
 setInterval(function() {
   $('.notes').first().remove();}
-  , 5000);
+  , 3400);
   
 
 
