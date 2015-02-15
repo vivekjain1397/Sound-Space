@@ -10,8 +10,8 @@ function createNewImage(){
 	$('body').append($('<img src="note1.png" class="notes" />'));
 		var $elem = $('img:last');
 		var pos = $elem.position();
-		$elem.offset({top: (Math.random()*400), left: (Math.random()*400)});
-		console.log("pos: " + (Math.random()*400));
+		//$elem.offset({left: (Math.random()*4)});
+		console.log("pos: " + (Math.random()*10));
 		
 		
 	
@@ -90,7 +90,7 @@ function wander() {
 	
 	//console.log("random: " + +Math.random());
 	
-  var x = (($doc.width() - $img.width()) / 2) * (Math.random() * 1.8 - 0.3 + (digit+Math.random())/5),
+  var x = (($doc.width() - $img.width()) / 2) * (Math.random() * 3 - (digit+Math.random())/5),
       y = (($doc.height() - $img.height()) / 2) * (Math.random() * 1.4 - 0.1 - (digit+Math.random())/5);
 
 	 //console.log("x:" + x);
