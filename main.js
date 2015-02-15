@@ -110,7 +110,7 @@ function gammaFunction(gNode, osc) {
     var wh = $(window).height();
 	
 	$(".notes").each(function(i){
-        var posx = Math.round(Math.random() * ww)-(Math.random()*20);
+        var posx = Math.round(Math.random() * ww)-(Math.random()*30);
         var posy = Math.round(Math.random() * wh)-50;
         $(this).css("top", posy + "px").css("left", posx + "px");
     });
