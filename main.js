@@ -11,13 +11,13 @@ function init(){
 
    imgObj2 = document.getElementById('myImage2');
    imgObj2.style.position= 'relative'; 
-   imgObj2.style.top = '200px'; 
-   imgObj.style.left = '0px'; 
+   imgObj2.style.top = '150px'; 
+   imgObj2.style.left = '0px'; 
 
    imgObj3 = document.getElementById('myImage3');
    imgObj3.style.position= 'relative'; 
    imgObj3.style.top = '300px'; 
-   imgObj.style.left = '0px'; 
+   imgObj3.style.left = '0px'; 
 }
 function moveRight(){
    imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
@@ -34,7 +34,7 @@ function moveRight2(){
 }
 function stop2(){
    clearTimeout(animate2);
-   imgObj2.style.top = '200px'; 
+   imgObj2.style.top = '150px'; 
    imgObj2.style.left = '0px'; 
 }
 function moveRight3(){
@@ -43,7 +43,7 @@ function moveRight3(){
 }
 function stop3(){
    clearTimeout(animate3);
-   imgObj3.style.top = '200px'; 
+   imgObj3.style.top = '300px'; 
    imgObj3.style.left = '0px'; 
 }
 window.onload =init;
@@ -73,7 +73,7 @@ addEventListener("keydown", function(event) {
     if (event.keyCode == 69)
     {
        document.getElementById('e').play() 
-     moveRight3();
+        moveRight3();
       setInterval(function () {stop3();}, 2000);
     }
   });
