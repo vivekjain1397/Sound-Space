@@ -6,7 +6,6 @@ var imgObj3 = null;
 var animate3 ;
 var imgObj4 = null;
 var animate4 ;
-
 function init(){
    imgObj = document.getElementById('myImage');
    imgObj.style.position= 'relative'; 
@@ -70,7 +69,7 @@ addEventListener("keydown", function(event) {
     {
       document.getElementById('c').play()  
       moveRight();
-      setInterval(function () {stop();}, 1500);
+      setInterval(function () {stop();}, 2000);
     
     }
   });
@@ -80,7 +79,7 @@ addEventListener("keydown", function(event) {
     {
        document.getElementById('d').play() 
        moveRight2();
-      setInterval(function () {stop2();}, 1500);
+      setInterval(function () {stop2();}, 2000);
       
     }
   });
@@ -91,7 +90,7 @@ addEventListener("keydown", function(event) {
     {
        document.getElementById('e').play() 
         moveRight3();
-      setInterval(function () {stop3();}, 1500);
+      setInterval(function () {stop3();}, 2000);
     }
   });
 
@@ -101,7 +100,7 @@ addEventListener("keydown", function(event) {
     {
        document.getElementById('g').play() 
        moveRight4();
-      setInterval(function () {stop4();}, 1500);
+      setInterval(function () {stop4();}, 2000);
     }
   });
 
