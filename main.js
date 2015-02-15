@@ -88,7 +88,7 @@ setInterval(function() {
 		case "loud5":
 			gammaFunction(gGainNode, gOscillator)
 			break;
-		case "percussion"
+		case "percussion":
 			beatFunction()
 			break;
 		default:
