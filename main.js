@@ -126,6 +126,7 @@ function showImage4() {
     img.style.visibility = 'visible';
 }
 
+
 setInterval(function() {
 	var xmlHttp = new XMLHttpRequest()
 	xmlHttp.open("GET", "http://104.236.209.35:3000/sound", false)
@@ -149,7 +150,18 @@ setInterval(function() {
 	}
 }, defaultTime);
 
+
 function gammaFunction(gNode, ini, sho, mv, st) {
+	$('body').append($('<img src="note1.png" class="notes" />'));
+		
+	$img = $(".notes");
+	wander();
+	
+	setInterval(function() {
+	$('.notes').first().remove();}
+	, 5500);
+
+  
 	gNode.gain.value = 1
 	init()
 	sho()
