@@ -14,8 +14,7 @@ background-size: cover;
 img {
 	width: 100px;
     height: 100px;
-    -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
-    animation: myfirst 5s;
+    -webkit-animation: myfirst 4s infinite; /* Chrome, Safari, Opera */
 	-webkit-filter: hue-rotate(180deg);
 	
 }
@@ -25,13 +24,6 @@ img {
 /*Chrome, Safari, Opera */
 
 @-webkit-keyframes myfirst {
-    from {filter: red;}
-    to {filter: yellow;}
-}
-
-/* Standard syntax */
-
-@keyframes myfirst {
-    from {filter: red;}
-    to {filter: yellow;}
+    0%,100% {-webkit-filter: hue-rotate(0deg);}
+    to {-webkit-filter: hue-rotate(360deg);}
 }
