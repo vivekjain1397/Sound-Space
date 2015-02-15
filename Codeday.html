@@ -1,63 +1,49 @@
 <!DOCTYPE html>
 
 <html>
-
-<h1>
-
-    <img id="title" src="title.png" width="1000" height="130"/>
-</h1>
-
-<head>
-
-	<link rel="stylesheet" type="text/css" href="style.css">
-	
-	
-
-</head>
+	<h1>
+		<img id="title" src="title.png" width="1000" height="130"/>
+	</h1>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
 
 
-<body>
+	<body>
+		<!--
+		<video autoplay="true" preload="auto" loop="loop" muted="muted" id="bgvid">
+			<source src="visualMusicShort.mp4" type="video/mp4">
+		</video>
+		 
+		 <audio id=c>
+		  <source src="C.wav" type="audio/wav">
+		</audio>
 
+		<audio id=d>
+		  <source src="D.wav" type="audio/wav">
+		</audio>
+		  
+		  <audio id=e>
+		  <source src="E.wav" type="audio/wav">
+		</audio>
 
-<video autoplay="true" preload="auto" loop="loop" muted="muted" id="bgvid">
-	<source src="visualMusicShort.mp4" type="video/mp4">
-</video>
- 
- <audio id=c>
-  <source src="C.wav" type="audio/wav">
-</audio>
+		<audio id=g>
+		  <source src="G.wav" type="audio/wav">
+			</audio>-->
 
-<audio id=d>
-  <source src="D.wav" type="audio/wav">
-</audio>
-  
-  <audio id=e>
-  <source src="E.wav" type="audio/wav">
-</audio>
+		<img class="notes" id="myImage" src="note1.png" />
+		<img class="notes" id="myImage2" src="note2.png" />
+		<img class="notes" id="myImage3" src="note32.png" />
+		<img class="notes" id="myImage4" src="note41.png" />
 
-<audio id=g>
-  <source src="G.wav" type="audio/wav">
-</audio>
+		<button id="move">wander (position)</button>
 
-<img class="notes" id="myImage" src="note1.png" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		<script src="movement.js"></script>
+		<script src="main.js"></script>
 
-<img class="notes" id="myImage2" src="note2.png" />
-
-<img class="notes" id="myImage3" src="note32.png" />
-
-<img class="notes" id="myImage4" src="note41.png" />
-
-
-
-<button id="move">wander (position)</button>
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-	<script src="movement.js"></script>
-	<script src="main.js"></script>
-
-</body>
+	</body>
 
 
 
